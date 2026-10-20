@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="color-scheme" content="light dark">
+<title>Política de Privacidade — Memória Popular</title>
+<style>
+:root{--bg:#fff;--fg:#1a1a1a;--muted:#555;--line:#d0d3d9;--accent:#0a56cc;--warn-bg:#fff4d6;--warn-fg:#5c3d00;--mark:#ffe58a;--mark-fg:#1a1a1a}
+@media (prefers-color-scheme:dark){:root{--bg:#000;--fg:#f2f2f2;--muted:#b0b3ba;--line:#2c2e35;--accent:#6aa6ff;--warn-bg:#3a2a00;--warn-fg:#ffe2a0;--mark:#6b5300;--mark-fg:#fff}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:1rem/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+main{max-width:46rem;margin:0 auto;padding:1.5rem 1rem 3rem}
+h1{font-size:1.6rem;line-height:1.25;margin:0 0 1rem}
+h2{font-size:1.25rem;margin:2rem 0 .5rem;padding-top:.5rem;border-top:1px solid var(--line)}
+h3{font-size:1.05rem;margin:1.5rem 0 .5rem}
+a{color:var(--accent)}
+blockquote{margin:1rem 0;padding:.75rem 1rem;background:var(--warn-bg);color:var(--warn-fg);border-left:4px solid currentColor;border-radius:4px}
+blockquote p{margin:.25rem 0}
+mark{background:var(--mark);color:var(--mark-fg);padding:0 .15em;border-radius:2px}
+.table-wrap{overflow-x:auto;margin:1rem 0}
+table{border-collapse:collapse;width:100%;font-size:.92rem}
+th,td{border:1px solid var(--line);padding:.5rem;text-align:left;vertical-align:top}
+th{background:color-mix(in srgb,var(--line) 40%,transparent)}
+hr{border:0;border-top:1px solid var(--line);margin:2rem 0 1rem}
+li{margin:.25rem 0}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+</style>
+</head>
+<body>
+<main>
+<h1>Política de Privacidade do Memória Popular</h1>
+<p><strong>Versão:</strong> 2026-10-17<br />
+<strong>Vigência:</strong> a partir de 17 de outubro de 2026 (ambiente de desenvolvimento)</p>
+<blockquote>
+<p><strong>VERSÃO PROVISÓRIA — NÃO USAR EM PRODUÇÃO SEM REVISÃO JURÍDICA.</strong> Este texto foi preparado para desenvolvimento e testes. Os trechos entre colchetes, como <mark>[RAZÃO SOCIAL]</mark>, precisam ser preenchidos. Os itens marcados <mark>[A CONFIRMAR]</mark> dependem de decisão do controlador e de revisão jurídica.</p>
+</blockquote>
+<h2>1. Quem somos e como falar com a gente</h2>
+<p>O Memória Popular é um aplicativo cívico para acompanhar parlamentares e governantes. Ele é oferecido por <strong><mark>[RAZÃO SOCIAL]</mark></strong>, inscrita no CNPJ sob o nº <strong><mark>[CNPJ]</mark></strong>, com sede em <strong><mark>[ENDEREÇO]</mark></strong> ("nós").</p>
+<p>Somos a <strong>controladora</strong> dos seus dados pessoais, ou seja, decidimos como e por que eles são usados, conforme a Lei Geral de Proteção de Dados (LGPD, Lei nº 13.709/2018).</p>
+<ul>
+<li><strong>Contato geral:</strong> <mark>[E-MAIL DE CONTATO]</mark></li>
+<li><strong>Encarregado pelo tratamento de dados (DPO):</strong> <mark>[NOME E E-MAIL DO ENCARREGADO (DPO)]</mark></li>
+</ul>
+<p>Esta Política explica quais dados coletamos, para quê, com quem compartilhamos, por quanto tempo guardamos e como você exerce seus direitos. Ela complementa os Termos de Uso.</p>
+<h2>2. Resumo rápido</h2>
+<ul>
+<li>Para criar a conta, só pedimos <strong>e-mail e senha</strong>. Todos os outros dados são <strong>opcionais</strong>.</li>
+<li>Seus <strong>interesses</strong> podem revelar opinião política. Por isso, só os guardamos com o seu <strong>consentimento específico</strong>, e você pode revogá-lo.</li>
+<li><strong>Não vendemos</strong> seus dados e <strong>não usamos</strong> ferramentas de publicidade, de análise de uso (analytics) ou cookies de rastreamento.</li>
+<li>Usamos dois fornecedores para operar o serviço: <strong>Supabase</strong> (banco de dados e login) e <strong>Resend</strong> (envio de e-mails da conta).</li>
+<li>O Memória Popular é destinado a pessoas com <strong>16 anos ou mais</strong>.</li>
+</ul>
+<h2>3. Quais dados coletamos e por quê</h2>
+<p>A tabela abaixo mostra cada dado, se ele é obrigatório, a finalidade e a base legal da LGPD. A mesma informação aparece no app, em <strong>Perfil › Privacidade e LGPD › Quais dados coletamos</strong>.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Dado</th>
+<th>Obrigatório?</th>
+<th>Para que usamos</th>
+<th>Base legal (LGPD)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>E-mail</td>
+<td>Sim</td>
+<td>Criar e acessar a conta, confirmar o cadastro, recuperar a senha e enviar avisos importantes sobre a conta</td>
+<td>Execução de contrato (art. 7º, V)</td>
+</tr>
+<tr>
+<td>Senha</td>
+<td>Sim</td>
+<td>Proteger o acesso à conta. A senha é guardada pelo serviço de autenticação apenas em formato cifrado (hash); nós não temos acesso a ela</td>
+<td>Execução de contrato (art. 7º, V)</td>
+</tr>
+<tr>
+<td>Forma de acesso</td>
+<td>Sim</td>
+<td>Saber como você entra na conta (hoje, somente e-mail e senha)</td>
+<td>Execução de contrato (art. 7º, V)</td>
+</tr>
+<tr>
+<td>Nome completo</td>
+<td>Não</td>
+<td>Personalizar o app, se você informar</td>
+<td>Execução de contrato (art. 7º, V) <mark>[A CONFIRMAR]</mark></td>
+</tr>
+<tr>
+<td>Telefone</td>
+<td>Não</td>
+<td>Permitir o contato por WhatsApp, se você autorizar. Hoje a recuperação de conta é feita somente por e-mail</td>
+<td>Execução de contrato (art. 7º, V) <mark>[A CONFIRMAR]</mark></td>
+</tr>
+<tr>
+<td>Autorização para WhatsApp</td>
+<td>Não</td>
+<td>Registrar se você aceita receber mensagens por WhatsApp</td>
+<td>Consentimento (art. 7º, I)</td>
+</tr>
+<tr>
+<td>Data de nascimento</td>
+<td>Não</td>
+<td>Tornar o conteúdo mais relevante e fazer análises agregadas por faixa etária. Se informada, precisa indicar 16 anos ou mais. Não é exibida publicamente</td>
+<td>Legítimo interesse (art. 7º, IX) <mark>[A CONFIRMAR]</mark></td>
+</tr>
+<tr>
+<td>UF (estado)</td>
+<td>Não</td>
+<td>Mostrar parlamentares e conteúdos do seu estado. A cidade ainda não é coletada</td>
+<td>Execução de contrato (art. 7º, V)</td>
+</tr>
+<tr>
+<td>Interesses (temas como economia, saúde, educação, meio ambiente, direitos humanos, entre outros)</td>
+<td>Não</td>
+<td>Personalizar temas e alertas</td>
+<td><strong>Consentimento específico e destacado</strong> (art. 11, I) — dado tratado como sensível</td>
+</tr>
+<tr>
+<td>Preferências de notificação (assuntos e canais: push, WhatsApp, e-mail)</td>
+<td>Não</td>
+<td>Registrar sobre o que e por qual canal você quer ser avisado</td>
+<td>Consentimento (art. 7º, I), um para cada canal</td>
+</tr>
+<tr>
+<td>Dados da conta</td>
+<td>Sim (gerados pelo sistema)</td>
+<td>Data de criação da conta e de conclusão do cadastro</td>
+<td>Execução de contrato (art. 7º, V)</td>
+</tr>
+<tr>
+<td>Registros de consentimento</td>
+<td>Sim (gerados pelo sistema)</td>
+<td>Comprovar o que você autorizou: finalidade, versão do documento aceito, data e hora, onde foi dado (cadastro ou perfil) e eventual revogação</td>
+<td>Cumprimento de obrigação legal e exercício regular de direitos (art. 7º, II e VI)</td>
+</tr>
+<tr>
+<td>Registros técnicos de acesso</td>
+<td>Sim (gerados pelo sistema)</td>
+<td>Segurança da conta, prevenção de abuso (por exemplo, limite de tentativas de login) e cumprimento da lei. Incluem data e hora de acesso, endereço IP e identificação do aplicativo/aparelho (user agent), registrados pelo serviço de autenticação</td>
+<td>Obrigação legal (art. 7º, II, e Marco Civil da Internet, art. 15) e legítimo interesse (art. 7º, IX) <mark>[A CONFIRMAR]</mark></td>
+</tr>
+</tbody>
+</table></div>
+<h3>3.1 Interesses: por que tratamos como dado sensível</h3>
+<p>A LGPD considera <strong>opinião política</strong> um dado pessoal sensível (art. 5º, II). Os temas que você escolhe como interesse, isoladamente ou combinados, podem permitir inferir sua opinião política. Por precaução, nós os tratamos como dado sensível:</p>
+<ul>
+<li>só são salvos se você marcar a autorização específica, que aparece em destaque na etapa <strong>Preferências</strong> do cadastro;</li>
+<li>são guardados separados dos demais dados do perfil;</li>
+<li>são usados apenas para personalizar temas e alertas, nunca para publicidade e nunca compartilhados com terceiros para outra finalidade;</li>
+<li>se você revogar a autorização, seus interesses são <strong>apagados</strong>.</li>
+</ul>
+<h3>3.2 Dados que não coletamos</h3>
+<p>Não coletamos CPF, endereço, localização por GPS, contatos da agenda, fotos, dados de pagamento ou dados bancários. Não usamos ferramentas de análise de uso, de publicidade ou de rastreamento entre apps e sites.</p>
+<h3>3.3 Durante o cadastro</h3>
+<p>Os dados opcionais que você preenche no cadastro ficam <strong>somente na memória do seu aparelho</strong> até você confirmar o e-mail e entrar com a sua senha. Só então eles são gravados na sua conta. Se isso não acontecer em até 24 horas, ou se o app for fechado, esses dados são descartados.</p>
+<h2>4. Dados guardados no seu aparelho</h2>
+<ul>
+<li>A sua <strong>sessão de login</strong> fica no armazenamento seguro do sistema operacional (Keychain no iPhone e Keystore no Android). Ela não fica em arquivos comuns do app.</li>
+<li>O app guarda no aparelho apenas preferências de interface que não são dados pessoais, como o tema claro ou escuro.</li>
+<li>O aplicativo <strong>não usa cookies</strong> de rastreamento nem ferramentas de analytics. As fontes e imagens do app vêm dentro do próprio aplicativo; nada disso é baixado de servidores de terceiros durante o uso.</li>
+</ul>
+<h2>5. Notificações e comunicações</h2>
+<p>Você escolhe os assuntos (votações importantes, atividades dos parlamentares, novos projetos de lei, campanhas e gastos públicos) e os canais (push, WhatsApp e e-mail). Cada canal depende de uma autorização sua, registrada separadamente.</p>
+<p><strong>Situação atual:</strong> nesta versão o app <strong>registra as suas preferências</strong>, mas ainda não envia alertas por push, WhatsApp ou e-mail. Os únicos e-mails enviados hoje são os da conta (confirmação de cadastro, redefinição de senha e avisos de segurança). Antes de começarmos a enviar alertas, atualizaremos esta Política com os fornecedores envolvidos.</p>
+<h2>6. Doações</h2>
+<p>A funcionalidade de doação <strong>ainda não está disponível</strong>. Nenhum valor é cobrado e <strong>nenhum dado de pagamento é coletado</strong>. Se ela for lançada, esta Política será atualizada antes, informando quais dados serão tratados e quem processará os pagamentos.</p>
+<h2>7. Com quem compartilhamos seus dados</h2>
+<p><strong>Não vendemos nem alugamos seus dados.</strong> Compartilhamos apenas o necessário com fornecedores que tratam os dados em nosso nome (operadores), seguindo nossas instruções e sob contrato:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Fornecedor</th>
+<th>O que faz</th>
+<th>Dados envolvidos</th>
+<th>Localização</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Supabase</strong></td>
+<td>Banco de dados, autenticação (login) e hospedagem do serviço</td>
+<td>Todos os dados da conta descritos na seção 3</td>
+<td><mark>[REGIÃO DO SERVIDOR SUPABASE]</mark></td>
+</tr>
+<tr>
+<td><strong>Resend</strong></td>
+<td>Envio de e-mails da conta (confirmação de cadastro, redefinição de senha, avisos de segurança)</td>
+<td>Endereço de e-mail e conteúdo da mensagem</td>
+<td><mark>[REGIÃO DO RESEND]</mark></td>
+</tr>
+</tbody>
+</table></div>
+<p>Também podemos compartilhar dados quando a lei exigir, por ordem judicial ou requisição de autoridade competente, ou para defender nossos direitos em processo judicial, administrativo ou arbitral.</p>
+<h2>8. Transferência internacional de dados</h2>
+<p><mark>[A CONFIRMAR conforme a região escolhida para cada fornecedor.]</mark> Se algum fornecedor armazenar ou processar seus dados fora do Brasil, a transferência será feita apenas nas hipóteses do art. 33 da LGPD, como a adoção de cláusulas-padrão contratuais aprovadas pela Autoridade Nacional de Proteção de Dados (ANPD), e com garantias de proteção equivalentes às da lei brasileira. Informaremos aqui os países de destino.</p>
+<h2>9. Por quanto tempo guardamos seus dados</h2>
+<p>Os prazos abaixo são uma <strong>proposta provisória <mark>[A CONFIRMAR]</mark></strong> a ser validada pelo encarregado e pela revisão jurídica.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Dado</th>
+<th>Prazo de guarda</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>E-mail, forma de acesso e dados da conta</td>
+<td>Enquanto a conta existir; apagados em até 30 dias após a exclusão da conta</td>
+</tr>
+<tr>
+<td>Dados opcionais (nome, telefone, data de nascimento, UF)</td>
+<td>Até você apagar o dado ou excluir a conta; apagados em até 30 dias após a exclusão</td>
+</tr>
+<tr>
+<td>Autorização para WhatsApp e preferências de notificação</td>
+<td>Até você revogar a autorização ou excluir a conta</td>
+</tr>
+<tr>
+<td>Interesses</td>
+<td>Até você revogar a autorização (apagados na hora) ou excluir a conta</td>
+</tr>
+<tr>
+<td>Registros de consentimento</td>
+<td>Enquanto a conta existir e, depois, por até 5 anos para comprovar o consentimento e defender direitos <mark>[A CONFIRMAR]</mark></td>
+</tr>
+<tr>
+<td>Registros técnicos de acesso (data, hora e IP)</td>
+<td>6 meses, prazo mínimo do Marco Civil da Internet (art. 15) <mark>[A CONFIRMAR]</mark></td>
+</tr>
+<tr>
+<td>Cópias de segurança (backups) e registros de envio de e-mail dos fornecedores</td>
+<td>Pelo ciclo de rotação de cada fornecedor, de até <mark>[N]</mark> dias <mark>[A CONFIRMAR]</mark></td>
+</tr>
+</tbody>
+</table></div>
+<p>Depois desses prazos, os dados são apagados ou anonimizados. Podemos guardá-los por mais tempo apenas quando a lei exigir ou para o exercício regular de direitos (art. 16 da LGPD).</p>
+<h2>10. Seus direitos</h2>
+<p>A LGPD (art. 18) garante a você, a qualquer momento:</p>
+<ol type="1">
+<li><strong>confirmar</strong> se tratamos seus dados;</li>
+<li><strong>acessar</strong> seus dados;</li>
+<li><strong>corrigir</strong> dados incompletos, inexatos ou desatualizados;</li>
+<li>pedir a <strong>anonimização, o bloqueio ou a eliminação</strong> de dados desnecessários, excessivos ou tratados em desacordo com a lei;</li>
+<li>pedir a <strong>portabilidade</strong> dos dados;</li>
+<li>pedir a <strong>eliminação</strong> dos dados tratados com base no seu consentimento;</li>
+<li>saber com quem <strong>compartilhamos</strong> seus dados;</li>
+<li>saber que pode <strong>não consentir</strong> e quais as consequências disso;</li>
+<li><strong>revogar o consentimento</strong>;</li>
+<li><strong>opor-se</strong> a tratamento feito com base em outra hipótese legal (como o legítimo interesse), quando houver descumprimento da lei;</li>
+<li>pedir a <strong>revisão</strong> de decisões tomadas exclusivamente por meio automatizado. Hoje o app não toma decisões automatizadas que afetem seus interesses.</li>
+</ol>
+<p>Você também pode apresentar reclamação à <strong>Autoridade Nacional de Proteção de Dados (ANPD)</strong>.</p>
+<h3>10.1 Como exercer seus direitos</h3>
+<ul>
+<li><strong>No app:</strong> em <strong>Perfil › Privacidade e LGPD</strong> você vê seus consentimentos, e em <strong>Quais dados coletamos</strong> vê o que tratamos. As opções de editar dados, revogar autorizações, exportar dados e excluir a conta pelo app <strong>ainda estão em desenvolvimento</strong> e aparecem como "Em breve".</li>
+<li><strong>Enquanto isso, por e-mail:</strong> envie sua solicitação ao encarregado em <strong><mark>[NOME E E-MAIL DO ENCARREGADO (DPO)]</mark></strong>, <strong>a partir do e-mail cadastrado na sua conta</strong>. Diga qual direito quer exercer. Para sua segurança, podemos pedir uma confirmação adicional de identidade antes de atender.</li>
+<li><strong>Prazos:</strong> a confirmação de existência ou o acesso em formato simplificado são fornecidos de imediato; a declaração completa, em até <strong>15 dias</strong> a partir do pedido (art. 19 da LGPD). Os demais pedidos serão atendidos em até <strong>15 dias</strong> <mark>[A CONFIRMAR]</mark>, ou informaremos o motivo de não poder atender de imediato.</li>
+<li>O atendimento é <strong>gratuito</strong>.</li>
+</ul>
+<h3>10.2 Exclusão da conta</h3>
+<p>Para excluir sua conta, envie o pedido por e-mail ao encarregado, como descrito acima. Após confirmarmos sua identidade, a conta e os dados pessoais serão excluídos ou anonimizados em até <strong>30 dias</strong>, exceto o que precisarmos guardar por obrigação legal ou para o exercício regular de direitos, pelos prazos da seção 9. A exclusão é permanente.</p>
+<p>A aceitação dos Termos de Uso e desta Política é necessária para usar o app. Por isso, retirar esse aceite equivale a pedir a exclusão da conta. As demais autorizações (interesses, WhatsApp, e-mail e push) podem ser revogadas separadamente, sem excluir a conta.</p>
+<h2>11. Segurança</h2>
+<p>Adotamos medidas técnicas e administrativas para proteger seus dados, entre elas:</p>
+<ul>
+<li>comunicação sempre criptografada (HTTPS/TLS);</li>
+<li>senha guardada apenas em formato cifrado (hash) pelo serviço de autenticação;</li>
+<li>confirmação do e-mail antes de liberar a conta e limite de tentativas de login;</li>
+<li>controle de acesso no banco de dados, para que cada pessoa só consiga ler os próprios dados;</li>
+<li>sessão guardada no armazenamento seguro do aparelho;</li>
+<li>coleta mínima: só e-mail e senha são obrigatórios.</li>
+</ul>
+<p>Nenhum sistema é totalmente imune a falhas. Se ocorrer um incidente de segurança que possa causar risco ou dano relevante a você, comunicaremos você e a ANPD nos prazos da regulamentação (Resolução CD/ANPD nº 15/2024).</p>
+<p>Você também ajuda: use uma senha exclusiva para o Memória Popular e não a compartilhe.</p>
+<h2>12. Idade mínima</h2>
+<p>O Memória Popular é destinado a pessoas com <strong>16 anos ou mais</strong>. Ao aceitar os Termos de Uso, você declara ter essa idade. Se você informar sua data de nascimento, ela precisa indicar 16 anos ou mais. Se soubermos que uma conta pertence a alguém com menos de 16 anos, ela será excluída. Responsáveis legais podem nos avisar pelo e-mail do encarregado.</p>
+<h2>13. Alterações desta Política</h2>
+<p>Podemos atualizar esta Política, por exemplo quando lançarmos novas funcionalidades ou mudarmos de fornecedor. Cada versão tem uma data de identificação (como "2026-10-17"), mostrada no app em <strong>Privacidade e LGPD</strong>.</p>
+<p>Quando publicarmos uma nova versão, o app pedirá que você <strong>leia e aceite a versão atual</strong> antes de continuar a usá-lo. Se não quiser aceitar, você pode sair do app e pedir a exclusão da conta. Guardamos o registro de qual versão você aceitou e quando.</p>
+<h2>14. Legislação e foro</h2>
+<p>Esta Política é regida pelas leis brasileiras, em especial a LGPD, o Marco Civil da Internet (Lei nº 12.965/2014) e o Código de Defesa do Consumidor (Lei nº 8.078/1990). Fica eleito o foro de <strong><mark>[FORO/CIDADE]</mark></strong>, sem prejuízo do seu direito de propor ação no foro do seu domicílio, como consumidor.</p>
+<hr />
+<p><strong><mark>[RAZÃO SOCIAL]</mark></strong> · CNPJ <mark>[CNPJ]</mark> · <mark>[ENDEREÇO]</mark><br />
+Contato: <mark>[E-MAIL DE CONTATO]</mark> · Encarregado (DPO): <mark>[NOME E E-MAIL DO ENCARREGADO (DPO)]</mark></p>
+</main>
+</body>
+</html>
