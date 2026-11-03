@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'sha256-mVNPGdLRXfi70jiiml1iLF4E6snmo33ufoXCbhGldog='; img-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#f8fafc" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#020617" media="(prefers-color-scheme: dark)">
+<title>Termos de Uso (versão 2026-11-03) · Memória Popular</title>
+<meta name="description" content="Regras para usar o Memória Popular, aplicativo cívico, gratuito e apartidário para acompanhar parlamentares e governantes.">
+<style>
+:root{
+  color-scheme:light dark;
+  --page:#f8fafc;--card:#ffffff;--soft:#f1f5f9;--border:#e2e8f0;--border-soft:#f1f5f9;
+  --text:#334155;--strong:#0f172a;--title:#020617;--muted:#64748b;
+  --primary:#0a6cff;--link:#0851bf;--on-primary:#ffffff;--selected:#e5efff;
+  --pend-bg:#fff4d6;--pend-fg:#6b4500;--pend-line:#d99a00;
+  --font:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --page:#020617;--card:#0f172a;--soft:#1e293b;--border:#1e293b;--border-soft:#1e293b;
+    --text:#cbd5e1;--strong:#f1f5f9;--title:#ffffff;--muted:#94a3b8;
+    --link:#7cb2ff;--selected:#0f2a55;
+    --pend-bg:#3a2a00;--pend-fg:#ffd27a;--pend-line:#8a6400;
+  }
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%;scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--page);color:var(--text);font-family:var(--font);font-size:1rem;line-height:1.75;-webkit-font-smoothing:antialiased;overflow-wrap:break-word}
+svg{display:block}
+a{color:var(--link);text-underline-offset:.18em}
+a:hover{text-decoration-thickness:2px}
+:focus-visible{outline:3px solid var(--primary);outline-offset:3px;border-radius:4px}
+.skip{position:absolute;left:1rem;top:-6rem;z-index:10;padding:.75rem 1rem;background:var(--primary);color:var(--on-primary);font-weight:700;border-radius:.75rem;text-decoration:none}
+.skip:focus{top:1rem}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+
+/* Página: cartão central, como na página de referência */
+.page{min-height:100vh;padding:2.5rem 1rem}
+@media (min-width:40rem){.page{padding-inline:1.5rem}}
+@media (min-width:64rem){.page{padding-block:4rem}}
+.doc{max-width:56rem;margin:0 auto;padding:1.5rem;background:var(--card);border:1px solid var(--border);border-radius:1.5rem;box-shadow:0 1px 2px rgb(15 23 42 / 6%)}
+@media (min-width:40rem){.doc{padding:2.5rem}}
+@media (min-width:64rem){.doc{padding:3.5rem}}
+
+/* Cabeçalho */
+.doc-header{padding-bottom:2rem;border-bottom:1px solid var(--border)}
+.brand{display:inline-flex;align-items:center;gap:.625rem;color:var(--strong);text-decoration:none;font-weight:800;font-size:1.125rem;letter-spacing:-.01em;line-height:1.2}
+.brand svg{width:2rem;height:auto;color:var(--primary);flex:none}
+.eyebrow{margin:2rem 0 0;font-size:.875rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--link)}
+h1{margin:.75rem 0 0;color:var(--title);font-size:clamp(1.875rem,1.5rem + 1.6vw,2.25rem);line-height:1.15;font-weight:800;letter-spacing:-.025em}
+.updated{margin:1rem 0 0;color:var(--muted);font-size:.875rem;line-height:1.5}
+.meta{display:flex;flex-wrap:wrap;gap:.5rem;margin:1rem 0 0;padding:0}
+.meta div{display:inline-flex;gap:.375rem;align-items:baseline;padding:.25rem .75rem;border:1px solid var(--border);border-radius:999px;background:var(--soft);font-size:.8125rem;line-height:1.5}
+.meta dt{color:var(--muted)}
+.meta dd{margin:0;color:var(--strong);font-weight:600;font-variant-numeric:tabular-nums}
+.doc-switch{display:flex;flex-wrap:wrap;gap:.5rem;margin:1.5rem 0 0;padding:0;list-style:none}
+.doc-switch a{display:inline-flex;align-items:center;min-height:2.75rem;padding:0 1rem;border:1px solid var(--border);border-radius:999px;color:var(--strong);font-weight:600;font-size:.9375rem;text-decoration:none}
+.doc-switch a:hover{border-color:var(--primary);color:var(--link)}
+.doc-switch a[aria-current="page"]{background:var(--selected);border-color:var(--primary);color:var(--link)}
+.prev{margin:1rem 0 0;color:var(--muted);font-size:.875rem}
+
+/* Sumário (sem script: details/summary) */
+.toc{margin:2rem 0 0;border:1px solid var(--border);border-radius:1rem;background:var(--soft)}
+.toc summary{cursor:pointer;min-height:2.75rem;padding:.625rem 1.125rem;color:var(--strong);font-weight:700;font-size:.9375rem}
+.toc ul{margin:0;padding:0 1.125rem 1rem 2.25rem;font-size:.9375rem;line-height:1.5}
+.toc li{margin:.375rem 0}
+.toc ul ul{padding:.25rem 0 0 1rem;font-size:.875rem}
+@media (min-width:48rem){.toc > ul{columns:2;column-gap:2rem}.toc li{break-inside:avoid}}
+
+/* Texto */
+.content{margin-top:2.5rem}
+.content > :first-child{margin-top:0}
+.content p,.content ul,.content ol{margin:1rem 0 0}
+.content ul{list-style:disc;padding-left:1.5rem}
+.content ol{padding-left:1.5rem}
+.content li{margin:.5rem 0 0}
+.content strong{color:var(--strong);font-weight:700}
+.content h2{margin:2.5rem 0 0;padding-bottom:.5rem;border-bottom:1px solid var(--border-soft);color:var(--title);font-size:1.25rem;line-height:1.6;font-weight:800;scroll-margin-top:1rem}
+.content h3{margin:1.75rem 0 0;color:var(--strong);font-size:1.0625rem;line-height:1.5;font-weight:700;scroll-margin-top:1rem}
+.content hr{margin:2.5rem 0 0;border:0;border-top:1px solid var(--border)}
+.lead{color:var(--strong)}
+
+/* Tabelas */
+.table-wrap{margin:1.25rem 0 0;overflow-x:auto;border:1px solid var(--border);border-radius:.75rem}
+.content table{width:100%;border-collapse:collapse;font-size:.9375rem;line-height:1.55}
+.content th{padding:.75rem 1rem;background:var(--soft);border-bottom:1px solid var(--border);color:var(--muted);text-align:left;font-size:.75rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+.content td{padding:.875rem 1rem;border-top:1px solid var(--border);vertical-align:top;text-align:left}
+.content tbody tr:first-child td{border-top:0}
+.content td:first-child{color:var(--strong);font-weight:600;min-width:8rem}
+@media screen and (max-width:39.99rem){
+  .content table,.content tbody,.content tr,.content td{display:block;width:100%}
+  .content thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+  .content tr{padding:.75rem 1rem;border-top:1px solid var(--border)}
+  .content tbody tr:first-child{border-top:0}
+  .content td{padding:.25rem 0;border:0;min-width:0}
+  .content td[data-label]::before{content:attr(data-label);display:block;color:var(--muted);font-size:.75rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+  .content td:first-child::before{display:none}
+}
+
+/* Índice do site */
+.cards{display:grid;gap:1rem;margin:1.5rem 0 0;padding:0;list-style:none}
+@media (min-width:40rem){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* Dado da empresa ainda não informado */
+.pendente{padding:.05em .4em;background:var(--pend-bg);color:var(--pend-fg);border:1px dashed var(--pend-line);border-radius:.375rem;font-weight:600;font-size:.92em;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.ph,.tbc{background:var(--pend-bg);color:var(--pend-fg);outline:2px dashed var(--pend-line)}
+
+/* Rodapé do cartão */
+.doc-footer{margin-top:3rem;padding-top:1.5rem;border-top:1px solid var(--border);color:var(--muted);font-size:.875rem;line-height:1.6}
+.doc-footer p{margin:.5rem 0 0}
+.doc-footer .links{display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;margin:0}
+.doc-footer .links a{font-weight:700;text-decoration:none}
+.doc-footer .links a:hover{text-decoration:underline}
+.doc-footer strong{color:var(--strong)}
+
+/* Impressão */
+@media print{
+  :root{--page:#fff;--card:#fff;--soft:#fff;--border:#999;--border-soft:#999;--text:#000;--strong:#000;--title:#000;--muted:#333;--link:#000;--pend-bg:#fff;--pend-fg:#000}
+  @page{margin:18mm 16mm}
+  body{font-size:11pt;line-height:1.5}
+  .page{padding:0}
+  .doc{max-width:none;padding:0;border:0;box-shadow:none}
+  .skip,.toc,.doc-switch{display:none!important}
+  .content h2,.content h3{break-after:avoid}
+  .content tr,.content li{break-inside:avoid}
+  .table-wrap{overflow:visible;border:0}
+  .content th,.content td{border:1px solid #999}
+  .content a[href^="http"]::after{content:" (" attr(href) ")";font-size:.85em}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<div class="page">
+<main id="conteudo" class="doc" tabindex="-1">
+<header class="doc-header">
+<a class="brand" href="./"><svg viewBox="0 0 193 138" aria-hidden="true" focusable="false"><g fill="currentColor"><rect x="18" y="72" width="22" height="48" rx="2"/><rect x="51" y="36" width="22" height="84" rx="2"/><rect x="86" y="0" width="21" height="120" rx="2"/><rect x="120" y="36" width="22" height="84" rx="2"/><rect x="153" y="72" width="22" height="48" rx="2"/><rect x="0" y="126" width="193" height="12" rx="2"/></g></svg><span>Memória Popular<span class="sr-only"> — todos os documentos legais</span></span></a>
+<p class="eyebrow">Regras de uso do aplicativo</p>
+<h1>Termos de Uso</h1>
+<p class="updated">Última atualização: 3 de novembro de 2026</p>
+<dl class="meta">
+<div><dt>Versão</dt><dd>2026-11-03</dd></div>
+<div><dt>Vigência</dt><dd>a partir de 3 de novembro de 2026</dd></div>
+<div><dt>Idade mínima</dt><dd>16 anos</dd></div>
+</dl>
+<nav aria-label="Documentos legais">
+<ul class="doc-switch">
+<li><a href="politica-de-privacidade">Política de Privacidade</a></li>
+<li><a href="termos-de-uso" aria-current="page">Termos de Uso</a></li>
+</ul>
+</nav>
+<p class="prev">Versão anterior: <a href="termos-de-uso-2026-10-17">2026-10-17</a></p>
+</header>
+<details class="toc">
+<summary>Sumário</summary>
+<ul>
+<li><a href="#quem-oferece-o-app" id="toc-quem-oferece-o-app">1. Quem oferece o app</a></li>
+<li><a href="#objeto" id="toc-objeto">2. Objeto</a></li>
+<li><a href="#aceite-destes-termos" id="toc-aceite-destes-termos">3. Aceite destes Termos</a></li>
+<li><a href="#cadastro-e-conta" id="toc-cadastro-e-conta">4. Cadastro e conta</a></li>
+<li><a href="#regras-de-conduta" id="toc-regras-de-conduta">5. Regras de conduta</a></li>
+<li><a href="#conteudo-sobre-parlamentares-e-governantes" id="toc-conteudo-sobre-parlamentares-e-governantes">6. Conteúdo sobre parlamentares e governantes</a></li>
+<li><a href="#notificacoes" id="toc-notificacoes">7. Notificações</a></li>
+<li><a href="#doacao-opcional" id="toc-doacao-opcional">8. Doação opcional</a></li>
+<li><a href="#propriedade-intelectual" id="toc-propriedade-intelectual">9. Propriedade intelectual</a></li>
+<li><a href="#disponibilidade-do-servico" id="toc-disponibilidade-do-servico">10. Disponibilidade do serviço</a></li>
+<li><a href="#suspensao-e-encerramento-da-conta" id="toc-suspensao-e-encerramento-da-conta">11. Suspensão e encerramento da conta</a></li>
+<li><a href="#limitacao-de-responsabilidade" id="toc-limitacao-de-responsabilidade">12. Limitação de responsabilidade</a></li>
+<li><a href="#privacidade-e-protecao-de-dados" id="toc-privacidade-e-protecao-de-dados">13. Privacidade e proteção de dados</a></li>
+<li><a href="#alteracoes-destes-termos" id="toc-alteracoes-destes-termos">14. Alterações destes Termos</a></li>
+<li><a href="#disposicoes-gerais-e-foro" id="toc-disposicoes-gerais-e-foro">15. Disposições gerais e foro</a></li>
+<li><a href="#contato" id="toc-contato">16. Contato</a></li>
+</ul>
+</details>
+<div class="content">
+<p><span class="lead">Estes Termos de Uso são as regras para usar o aplicativo <strong>Memória Popular</strong>. Leia-os com atenção, junto com a nossa <a href="politica-de-privacidade">Política de Privacidade</a>, que explica como tratamos os seus dados pessoais.</span></p>
+<h2 id="quem-oferece-o-app">1. Quem oferece o app</h2>
+<p>O aplicativo Memória Popular (“app” ou “serviço”) é oferecido por <strong>JSALAB INOVACAO E CONSULTORIA LTDA</strong> (CNPJ 67.223.736/0001-08, com sede em Av. Paulista, 1636, Conj. 5, Pavimento 11, Condomínio Paulista Corporate, Bela Vista, São Paulo/SP, CEP 01310-200), referida nestes Termos como “nós”. Contato: <a href="mailto:detecsys.2024@gmail.com">detecsys.2024@gmail.com</a>.</p>
+<h2 id="objeto">2. Objeto</h2>
+<p>O Memória Popular é um aplicativo cívico, gratuito e apartidário, que ajuda você a acompanhar parlamentares e governantes e a guardar a memória do que eles fazem. Com ele você pode:</p>
+<ul>
+<li>criar uma conta com e-mail e senha e entrar nela;</li>
+<li>informar, se quiser, dados opcionais (nome, telefone, data de nascimento, se é aposentado, profissão, estado, cidade, quando disponível, e interesses);</li>
+<li>escolher sobre quais assuntos e por quais canais deseja receber alertas;</li>
+<li>consultar, na área <strong>Privacidade e LGPD</strong>, quais dados tratamos e quais autorizações você deu;</li>
+<li>quando a doação estiver disponível, apoiar o projeto, se quiser, com uma doação opcional (seção 8).</li>
+</ul>
+<p>Algumas funções podem aparecer no app como <strong>“Em breve”</strong>. Elas ainda não estão disponíveis e podem mudar ou não ser lançadas. Funcionalidades novas poderão ter regras próprias, informadas antes de você usá-las.</p>
+<h2 id="aceite-destes-termos">3. Aceite destes Termos</h2>
+<p>Para criar uma conta, você precisa marcar a opção <strong>“Li e concordo com os Termos de Uso e declaro ter 16 anos ou mais”</strong> e, separadamente, aceitar a Política de Privacidade. Ao fazer isso, você concorda com estes Termos. Se não concordar, não crie a conta nem use o app.</p>
+<h2 id="cadastro-e-conta">4. Cadastro e conta</h2>
+<ul>
+<li>O app é destinado a pessoas com <strong>16 anos ou mais</strong>. Ao aceitar estes Termos, você declara ter essa idade. Declarar uma idade falsa viola estes Termos e pode levar à exclusão da conta. Se você tem 16 ou 17 anos, recomendamos usar o app com o conhecimento dos seus pais ou responsáveis.</li>
+<li>Você é responsável pelas informações que fornece e deve mantê-las verdadeiras. Mantenha o seu e-mail atualizado: é por ele que confirmamos o cadastro e enviamos a redefinição de senha.</li>
+<li>A conta é <strong>pessoal e intransferível</strong>. Não compartilhe a sua senha nem permita que outra pessoa use a sua conta.</li>
+<li>Use uma senha <strong>exclusiva</strong> para o Memória Popular. Se suspeitar de uso indevido, redefina a senha em “Esqueci minha senha” e avise-nos em <a href="mailto:detecsys.2024@gmail.com">detecsys.2024@gmail.com</a>.</li>
+<li>Você é responsável pelas atividades feitas na sua conta, salvo quando decorrerem de falha nossa.</li>
+</ul>
+<h2 id="regras-de-conduta">5. Regras de conduta</h2>
+<p>Ao usar o app, você se compromete a:</p>
+<ul>
+<li>usá-lo apenas para fins lícitos e de acordo com estes Termos;</li>
+<li>não tentar acessar contas, dados ou áreas que não sejam suas;</li>
+<li>não tentar burlar, testar ou desativar mecanismos de segurança, limites de uso ou de acesso, salvo com a nossa autorização prévia e por escrito;</li>
+<li>não usar robôs, raspagem de dados (scraping) ou meios automatizados para acessar o serviço ou criar contas;</li>
+<li>não criar contas em nome de outra pessoa nem com dados falsos;</li>
+<li>não sobrecarregar, interferir ou prejudicar o funcionamento do serviço;</li>
+<li>não usar o app para assédio, discriminação, desinformação, propaganda eleitoral irregular ou qualquer conduta ilegal;</li>
+<li>não fazer engenharia reversa do app, exceto quando a lei permitir.</li>
+</ul>
+<p>Se encontrar uma falha de segurança, avise-nos em <a href="mailto:detecsys.2024@gmail.com">detecsys.2024@gmail.com</a> sem explorá-la nem divulgá-la antes da correção.</p>
+<h2 id="conteudo-sobre-parlamentares-e-governantes">6. Conteúdo sobre parlamentares e governantes</h2>
+<ul>
+<li>As informações sobre agentes públicos têm <strong>caráter informativo</strong> e são baseadas em fontes públicas, como portais oficiais de dados abertos e de transparência.</li>
+<li>Embora busquemos precisão, dados públicos podem conter erros, atrasos ou estar incompletos na origem. <strong>Não garantimos</strong> que todas as informações estejam completas, exatas ou atualizadas. Confira nas fontes oficiais antes de tomar decisões importantes.</li>
+<li>O Memória Popular é <strong>apartidário</strong>. A exibição de um agente público não significa apoio nem crítica a ele, a partidos ou a candidaturas.</li>
+<li>Se encontrar uma informação incorreta, avise-nos em <a href="mailto:detecsys.2024@gmail.com">detecsys.2024@gmail.com</a>.</li>
+</ul>
+<h2 id="notificacoes">7. Notificações</h2>
+<p>Você escolhe os assuntos e os canais (push, WhatsApp e e-mail) dos alertas e pode mudar essas escolhas a qualquer momento. Hoje o app registra as suas preferências, mas <strong>ainda não envia alertas</strong>. Mesmo quando os alertas estiverem disponíveis, eles podem atrasar ou falhar por motivos técnicos; não os use como única fonte para acompanhar prazos ou eventos importantes.</p>
+<p>E-mails sobre a sua conta (confirmação de cadastro, redefinição de senha e avisos de segurança) são necessários para o funcionamento do serviço.</p>
+<h2 id="doacao-opcional">8. Doação opcional</h2>
+<p>O app é <strong>gratuito</strong>. <strong>A doação ainda não está disponível no aplicativo</strong>: hoje o app mostra essa opção como “Em breve” e não é possível doar. Até lá, <strong>nenhum dado é enviado ao RevenueCat nem à Google para esse fim</strong>. Antes de lançá-la, avisaremos no app e publicaremos uma nova versão destes Termos e da Política de Privacidade, quando necessário.</p>
+<p>Quando a doação estiver disponível no aplicativo, quem quiser poderá apoiar a manutenção do projeto com uma <strong>assinatura mensal de R$ 5,00</strong>, nas seguintes condições:</p>
+<ul>
+<li>a doação será <strong>opcional e voluntária</strong> e <strong>não será necessária para usar o app</strong>: todas as funcionalidades continuarão disponíveis para quem não doa;</li>
+<li>a assinatura <strong>não dará benefícios</strong> além dos descritos nestes Termos e na Política de Privacidade: servirá apenas para apoiar o projeto, sem vantagem, conteúdo exclusivo ou contrapartida;</li>
+<li>a contratação e o pagamento serão feitos <strong>pelo Google Play Billing</strong>, dentro da interface do Google Play, e processados pelo <strong>Google</strong> e pelo <strong>RevenueCat</strong>, que gerenciará a assinatura em nosso nome. <strong>O app não coletará nem guardará dados do seu cartão</strong> ou de outro meio de pagamento;</li>
+<li>a cobrança será mensal e renovada automaticamente até você cancelar. Você poderá <strong>cancelar a qualquer momento</strong> em <strong>Play Store › Pagamentos e assinaturas › Assinaturas</strong>; o cancelamento interromperá as próximas cobranças;</li>
+<li>pedidos de reembolso seguirão as regras do Google Play, sem prejuízo dos seus direitos como consumidor;</li>
+<li><strong>excluir a conta no app não cancelará a assinatura no Google Play</strong>: cancele-a também na loja;</li>
+<li>quando lançada, a assinatura de apoio estará disponível apenas no Android, pelo Google Play.</li>
+</ul>
+<p>O tratamento de dados na doação está descrito na seção 4 da Política de Privacidade.</p>
+<h2 id="propriedade-intelectual">9. Propriedade intelectual</h2>
+<p>O nome Memória Popular, a marca, o logotipo, o design, os textos próprios e o software do app pertencem a JSALAB INOVACAO E CONSULTORIA LTDA ou a seus licenciantes. Você recebe uma licença pessoal, limitada, não exclusiva, intransferível e revogável para usar o app conforme estes Termos. Não é permitido copiar, modificar, distribuir ou explorar comercialmente esses elementos sem autorização.</p>
+<p>Dados e documentos públicos de órgãos oficiais seguem as regras das suas fontes. Componentes de código aberto usados no app seguem as suas próprias licenças.</p>
+<h2 id="disponibilidade-do-servico">10. Disponibilidade do serviço</h2>
+<p>Podemos alterar, suspender ou encerrar funcionalidades, temporária ou definitivamente, por exemplo para manutenção, segurança ou mudanças no projeto. Faremos o possível para avisar com antecedência quando a mudança afetar você de forma relevante.</p>
+<h2 id="suspensao-e-encerramento-da-conta">11. Suspensão e encerramento da conta</h2>
+<ul>
+<li><strong>Por você:</strong> você pode excluir a sua conta a qualquer momento, seguindo a página <strong><a href="exclusao-de-conta">Exclusão de conta</a></strong>. O que acontece com os seus dados está explicado na Política de Privacidade.</li>
+<li><strong>Por nós:</strong> podemos suspender ou encerrar contas que violem estes Termos ou a lei, que apresentem risco à segurança do serviço ou de outras pessoas, ou mediante ordem de autoridade competente. Quando possível e quando isso não prejudicar uma investigação ou a segurança, avisaremos você e informaremos o motivo, e você poderá contestar pelo e-mail <a href="mailto:detecsys.2024@gmail.com">detecsys.2024@gmail.com</a>.</li>
+</ul>
+<h2 id="limitacao-de-responsabilidade">12. Limitação de responsabilidade</h2>
+<p>Na extensão permitida pela lei, e sem afastar direitos garantidos pelo Código de Defesa do Consumidor:</p>
+<ul>
+<li>não respondemos por decisões tomadas apenas com base nas informações do app, nem por erros, atrasos ou omissões nos dados públicos de origem;</li>
+<li>não respondemos por falhas causadas por fatores fora do nosso controle razoável, como problemas na sua conexão, no seu aparelho, nas lojas de aplicativos ou casos de força maior;</li>
+<li>não respondemos por danos decorrentes do uso indevido da sua conta por terceiros a quem você tenha fornecido a sua senha;</li>
+<li>não respondemos pelo conteúdo de sites e serviços externos eventualmente indicados no app;</li>
+<li>quando a doação estiver disponível, pagamentos, cobranças e reembolsos da assinatura de apoio serão processados pelo Google Play, conforme as regras dele.</li>
+</ul>
+<h2 id="privacidade-e-protecao-de-dados">13. Privacidade e proteção de dados</h2>
+<p>O tratamento dos seus dados pessoais está descrito na <a href="politica-de-privacidade">Política de Privacidade</a>, que faz parte destes Termos. Os seus interesses, que podem revelar opinião política, só são guardados com a sua autorização específica.</p>
+<h2 id="alteracoes-destes-termos">14. Alterações destes Termos</h2>
+<p>Podemos atualizar estes Termos. Cada versão tem uma data de identificação (como “2026-11-03”), e as versões anteriores continuam publicadas para consulta. Quando houver uma nova versão, o app mostrará a tela <strong>“Termos de Uso e Privacidade”</strong> e pedirá que você leia e aceite a versão atual antes de continuar a usá-lo. Se não concordar, você pode tocar em <strong>“Sair”</strong> e pedir a exclusão da conta. Guardamos o registro de qual versão você aceitou, quando e onde.</p>
+<h2 id="disposicoes-gerais-e-foro">15. Disposições gerais e foro</h2>
+<ul>
+<li>Se alguma cláusula destes Termos for considerada inválida, as demais continuam valendo.</li>
+<li>A tolerância com o descumprimento de alguma regra não significa renúncia ao direito de exigi-la depois.</li>
+<li>Estes Termos são regidos pelas leis brasileiras. Eventuais disputas serão resolvidas no foro do seu domicílio, como consumidor.</li>
+</ul>
+<h2 id="contato">16. Contato</h2>
+<ul>
+<li><strong>Dúvidas, sugestões e avisos de erro:</strong> <a href="mailto:detecsys.2024@gmail.com">detecsys.2024@gmail.com</a></li>
+<li><strong>Privacidade e dados pessoais:</strong> <a href="mailto:detecsys.2024@gmail.com">detecsys.2024@gmail.com</a></li>
+<li><strong>Encarregado pelo tratamento de dados pessoais (DPO):</strong> Jefferson, <a href="mailto:detecsys.2024@gmail.com">detecsys.2024@gmail.com</a></li>
+</ul>
+</div>
+<footer class="doc-footer">
+<p class="links">
+<a href="politica-de-privacidade">Leia também a Política de Privacidade</a>
+<a href="./">Todos os documentos legais</a>
+</p>
+<p>Controladora: <strong>JSALAB INOVACAO E CONSULTORIA LTDA</strong> · CNPJ: 67.223.736/0001-08 · Sede: Av. Paulista, 1636, Conj. 5, Pavimento 11, Condomínio Paulista Corporate, Bela Vista, São Paulo/SP, CEP 01310-200</p>
+<p>Contato: <a href="mailto:detecsys.2024@gmail.com">detecsys.2024@gmail.com</a> · Privacidade e dados pessoais: <a href="mailto:detecsys.2024@gmail.com">detecsys.2024@gmail.com</a> · Encarregado pelo tratamento de dados (DPO): Jefferson, <a href="mailto:detecsys.2024@gmail.com">detecsys.2024@gmail.com</a></p>
+</footer>
+</main>
+</div>
+</body>
+</html>
